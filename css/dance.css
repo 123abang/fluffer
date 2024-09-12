@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+
+
+  /* Styling for the h1 element */
+  #mar {
+    font-family: 'Play', sans-serif;
+    font-size: 4rem;
+    color: #333;
+    display: inline-block;
+    overflow: hidden;
+    color: black;
+    font-size: 100px;
+  }
+
+  /* Animation keyframes */
+  @keyframes dance {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  /* Apply animation to each letter */
+  #mar pre {
+    animation: dance 1s ease-in-out infinite;
+  }

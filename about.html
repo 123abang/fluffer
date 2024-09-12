@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ABOUT US</title>
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/logo.css">
+
+  <style>
+    body {
+      font-size: 16px; /* Base font size for mobile */
+      margin: 0;
+      padding: 0;
+    }
+    
+    .about-us-section {
+      padding: 40px 20px;
+      background-color: #f7f9fc;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      max-width: 1200px;
+      margin: 0 auto;
+      font-size: 20px;
+    }
+    
+    .about-us-section h1 {
+      font-size: 2.5em; /* Responsive font size */
+      font-weight: bold;
+      margin-bottom: 20px;
+      color: black;
+      text-shadow: 2px 2px 4px #aaa;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+    
+    .about-us-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .about-us-block {
+      margin-bottom: 40px;
+      text-align: left;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    .about-us-block h2 {
+      font-size: 2em; /* Responsive font size */
+      margin-bottom: 10px;
+      color: black;
+    }
+    
+    .about-us-block p {
+      font-size: 1.125em; /* Responsive font size */
+      line-height: 1.6;
+      color: #333;
+      text-align: justify;
+    }
+    
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      body {
+        font-size: 14px;
+      }
+      
+      .about-us-section h1 {
+        font-size: 2em;
+      }
+      
+      .about-us-block h2 {
+        font-size: 1.5em;
+      }
+      
+      .about-us-block p {
+        font-size: 1em;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      body {
+        font-size: 12px;
+      }
+      
+      .about-us-section h1 {
+        font-size: 1.75em;
+      }
+      
+      .about-us-block h2 {
+        font-size: 1.25em;
+      }
+      
+      .about-us-block p {
+        font-size: 0.875em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo"><img src="images/photo_2024-09-10_16-50-11.jpg" alt="" width="100px"></div> <span id="logo">Fluffer</span>
+    <ul class="nav-list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About us</a></li>
+      <li><a href="contact.html">Contact us</a></li>
+      <li><a href="roadmap.html">RoadMap</a></li>
+      <li><a href="howtobuy.html">How to Buy</a></li>
+      <li><a href="FAQ.HTML">FAQ'S</a></li>
+    </ul>
+    <!-- <button class="live-chart">Live Chart</button> -->
+    <div class="menu-icon" onclick="openSidebar()">&#9776;</div>
+  </nav>
+
+  <div id="sidebar" class="sidebar">
+    <div class="close-btn" onclick="closeSidebar()">&times;</div>
+    <br><br><br><br>
+    <ul class="sidebar-list">
+        <li><a href="#">Home</a></li>
+        <li><a href="about.html">About us</a></li>
+        <li><a href="contact.html">Contact us</a></li>
+        <li><a href="roadmap.html">RoadMap</a></li>
+        <li><a href="howtobuy.html">How to Buy</a></li>
+        <li><a href="FAQ.HTML">FAQ'S</a></li>
+    </ul>
+  </div>
+
+  <section class="about-us-section" style="font-family: 'Poppins', sans-serif; color: #333;">
+    <h1 style="font-size: 2.5rem; font-weight: 700; margin-bottom: 30px; text-align: center;">About Us</h1>
+    
+    <div class="about-us-content" style="padding: 20px;">
+      
+      <div class="about-us-block" style="margin-bottom: 40px;">
+        <h2 style="font-size: 1.75rem; font-weight: 600;">When Was Fluffer Founded?</h2>
+        <p style="font-size: 1.125rem; line-height: 1.6;">
+          Fluffer was originally launched as FluffCoin in July 2024, and as of now, we’ve officially completed our exciting rebranding to Fluffer! This evolution marks the next phase in our mission to bring joy, support charitable causes, and foster a strong, engaged community within the crypto world. While the name and look have evolved, our core values of fun, community, and positive impact remain stronger than ever.
+        </p>
+      </div>
+      
+      <div class="about-us-block" style="margin-bottom: 40px;">
+        <h2 style="font-size: 1.75rem; font-weight: 600;">What Makes Us Unique?</h2>
+        <p style="font-size: 1.125rem; line-height: 1.6;">
+          Fluffer combines the playful nature of memes with the powerful potential of blockchain technology. We emphasize community engagement, fun, and real-world impact through charitable initiatives, all while providing exciting financial opportunities for our holders.
+        </p>
+      </div>
+
+      <div class="about-us-block" style="margin-bottom: 40px;">
+        <h2 style="font-size: 1.75rem; font-weight: 600;">What Is $FlufferCoin?</h2>
+        <p style="font-size: 1.125rem; line-height: 1.6;">
+          Fluffer is the most playful and engaging meme coin on the Solana blockchain! More than just a cryptocurrency, Fluffer is a community-driven project focused on building a fun, vibrant ecosystem while still making a positive impact. With a mission to support dog-related causes and create a space for fun, crypto gains, and community spirit, Fluffer is here to make waves!
+        </p>
+      </div>
+
+      <div class="about-us-block" style="margin-bottom: 40px;">
+        <h2 style="font-size: 1.75rem; font-weight: 600;">Download Our Whitepaper</h2>
+        <p style="font-size: 1.125rem; line-height: 1.6;">
+          Explore the detailed vision, technology, and roadmap of Fluffer. Our whitepaper provides an in-depth look at our mission, tokenomics, and plans for the future.
+          <a href="https://docs.google.com/document/d/1_TDJG7JCIEQSpKGQhIG7g-AupScivDcKQBpxKaY5FBs/edit" style="color: #007bff; text-decoration: none; font-weight: bold;">Download our whitepaper here</a>
+        </p>
+      </div>
+
+      <!-- New Content Begins Here -->
+
+      <div class="about-us-block" style="margin-bottom: 40px;">
+        <h2 style="font-size: 1.75rem; font-weight: 600;">How Does Fluffer Support Charitable Causes?</h2>
+        <p style="font-size: 1.125rem; line-height: 1.6;">
+          5% of our total supply is allocated to supporting dog-related causes globally. We partner with various dog charities to provide funding for shelters, treatments, and adoption programs, making a positive impact on the lives of our furry friends.
+        </p>
+      </div>
+
+      <div class="about-us-block" style="margin-bottom: 40px;">
+        <h2 style="font-size: 1.75rem; font-weight: 600;">What Is the Total Supply of Fluffer?</h2>
+        <p style="font-size: 1.125rem; line-height: 1.6;">
+          The total supply of Fluffer is 1,000,000,000 Fluffer tokens.
+        </p>
+      </div>
+
+      <div class="about-us-block" style="margin-bottom: 40px;">
+        <h2 style="font-size: 1.75rem; font-weight: 600;">How Are the Fluffer Tokens Distributed?</h2>
+        <ul style="font-size: 1.125rem; line-height: 1.6; list-style: none; padding-left: 0;">
+          <li><i class="fas fa-hand-holding-heart"></i> Charity & Donations: 5% (50,000,000 Fluffer)</li>
+          <li><i class="fas fa-users"></i> Community Rewards: 10% (100,000,000 Fluffer)</li>
+          <li><i class="fas fa-bullhorn"></i> Development & Marketing: 10% (100,000,000 Fluffer)</li>
+          <li><i class="fas fa-coins"></i> Liquidity Pool: 15% (150,000,000 Fluffer)</li>
+          <li><i class="fas fa-user-tie"></i> Team Allocation: 10% (100,000,000 Fluffer)</li>
+          <li><i class="fas fa-landmark"></i> Treasury Wallet: 10% (100,000,000 Fluffer)</li>
+          <li><i class="fas fa-leaf"></i> Ecosystem Growth: 40% (400,000,000 Fluffer)</li>
+        </ul>
+      </div>
+
+      <div class="about-us-block" style="margin-bottom: 40px;">
+        <h2 style="font-size: 1.75rem; font-weight: 600;">What Security Measures Are in Place for Fluffer?</h2>
+        <p style="font-size: 1.125rem; line-height: 1.6;">
+          Fluffer has achieved KYC certification through Assure DeFi, ensuring trust and credibility within our community. Additionally, we have locked liquidity to guarantee the stability and security of our token, providing peace of mind for our holders.
+        </p>
+      </div>
+
+      <div class="about-us-block" style="margin-bottom: 40px;">
+        <h2 style="font-size: 1.75rem; font-weight: 600;">What Are the Future Plans for Fluffer?</h2>
+        <ul style="font-size: 1.125rem; line-height: 1.6; list-style: none; padding-left: 0;">
+          <li><i class="fas fa-exchange-alt"></i> Expanded listings on more decentralized exchanges and increased market accessibility.</li>
+          <li><i class="fas fa-gift"></i> Introduction of staking rewards as the community grows.</li>
+          <li><i class="fas fa-language"></i> Implementation of multi-language support to reach a global audience.</li>
+          <li><i class="fas fa-dog"></i> Increased support for dog-related charitable causes and community-driven initiatives.</li>
+          <li><i class="fas fa-tshirt"></i> Launch of Fluffer-branded merchandise and digital art collections to engage the community and broaden visibility.</li>
+        </ul>
+      </div>
+
+    </div>
+</section>
+
+
+  <footer class="footer-section">
+    <div class="footer-content">
+      <div class="footer-text">
+        <p>$FlufferCoin is dedicated to creating a fun, impactful, and community-driven project. Join us on this fluffy adventure and help us make the crypto world a better place, one $FlufferCoin at a time!</p>
+      </div>
+      <div class="footer-links">
+        <h2>Quick Links</h2>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="roadmap.html">Roadmap</a></li>
+          <li><a href="howtobuy.html">How to Buy</a></li>
+          <li><a href="https://docs.google.com/document/d/1W1K-RKzpoS7OqNFHoM2u6PG6VS1AWPOQDdvdRIeGoGw/edit#heading=h.rvydwwlspe0c">Whitepaper</a></li>
+        </ul>
+      </div>
+      <div class="footer-social">
+        <h2>Follow Us</h2>
+        <a href="https://twitter.com/fluffercoin" target="_blank" class="social-icon">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://t.me/fluffercoin" target="_blank" class="social-icon">
+          <i class="fab fa-telegram-plane"></i>
+        </a>
+        <a href="https://www.instagram.com/fluffercoin" target="_blank" class="social-icon">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="year">2024</span> Fluffer Land. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts/navbar.js"></script>
+</body>
+</html>

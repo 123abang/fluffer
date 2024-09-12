@@ -1,0 +1,119 @@
+.roadmap-section {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 2s ease-out;
+    margin: 20px auto;
+    max-width: 800px;
+  }
+
+  @media (max-width: 768px){
+    .roadmap-section{
+        position: relative;
+        bottom: 1100px;
+    }
+  }
+  
+  .roadmap-section h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: BLACK;
+    text-shadow: 2px 2px 4px #aaa;
+    animation: bounceIn 1.5s ease-in-out;
+  }
+  
+  .milestones {
+    text-align: left;
+    margin: 0 auto;
+    max-width: 700px;
+  }
+  
+  .milestone h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .milestone ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1.125rem;
+    color: #555;
+  }
+  
+  .milestone li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 25px;
+  }
+  
+  .milestone li::before {
+    content: '✓';
+    color: black;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 1.5rem;
+  }
+  
+  .learn-more-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.125rem;
+    font-weight: bold;
+    color: #ffffff;
+    background-color:BLACK;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .learn-more-button:hover {
+    background-color: BLACK;
+    transform: scale(1.05);
+  }
+  
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes bounceIn {
+    0%, 20%, 40%, 60%, 80%, 100% {
+      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+    0% {
+      opacity: 0;
+      transform: scale3d(0.3, 0.3, 0.3);
+    }
+    20% {
+      transform: scale3d(1.1, 1.1, 1.1);
+    }
+    40% {
+      transform: scale3d(0.9, 0.9, 0.9);
+    }
+    60% {
+      opacity: 1;
+      transform: scale3d(1.03, 1.03, 1.03);
+    }
+    80% {
+      transform: scale3d(0.97, 0.97, 0.97);
+    }
+    100% {
+      opacity: 1;
+      transform: scale3d(1, 1, 1);
+    }
+  }
+  

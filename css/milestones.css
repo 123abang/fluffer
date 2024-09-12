@@ -1,0 +1,70 @@
+body {
+    font-family: 'Comic Neue', cursive;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #f8f8f8;
+}
+.milestones-container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    border-radius: 15px;
+}
+.milestone-item {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    animation: float 3s ease-in-out infinite;
+    transition: transform 0.3s ease;
+    flex-direction: column;
+    text-align: center;
+}
+.milestone-item:hover {
+    transform: translateY(-5px);
+}
+.milestone-icon {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+.milestone-text {
+    flex-grow: 1;
+    margin-bottom: 10px;
+}
+.milestone-button {
+    background-color: #fff;
+    color: black;
+    border: 2px solid black;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.milestone-button:hover {
+    background-color: black;
+    color: #fff;
+}
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+.milestones-header {
+    text-align: center;
+    margin-bottom: 20px;
+    color: black;
+    text-shadow: 2px 2px 4px #aaa;
+}

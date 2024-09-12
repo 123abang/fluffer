@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&family=Playwrite+AT:ital,wght@0,100..400;1,100..400&display=swap');
+
+
+.footer-section {
+    background-color: #f7f9fc;
+    padding: 40px 20px;
+    border-top: 1px solid #ddd;
+    text-align: center;
+  }
+  
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer-text {
+    margin-bottom: 30px;
+    color: #333;
+    font-size: 1.125rem;
+    line-height: 1.6;
+  }
+  
+  .footer-links {
+    margin-bottom: 30px;
+  }
+  
+  .footer-links h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: black;
+  }
+  
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links ul li {
+    margin: 10px 0;
+  }
+  
+  .footer-links ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-links ul li a:hover {
+    color: black;
+  }
+  
+  .footer-social {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .footer-social h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: black;
+  }
+  
+  .social-icon {
+    font-size: 24px;
+    color: #333;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    color: black;
+    transform: scale(1.2);
+  }
+  
+  .footer-bottom {
+    margin-top: 30px;
+    font-size: 0.875rem;
+    color: #666;
+  }
+  
+  .footer-bottom p {
+    margin: 0;
+  }
+
+
+  #mar{
+    font-size: 100px;
+  }
+
+  @media (max-width: 768px){
+    #mar{
+        font-size: 120px;
+        position: relative;
+        bottom: 600px;  font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: bold;
+        font-style: normal;
+    color: black; /* A playful pink color */
+
+      }
+  }
+  

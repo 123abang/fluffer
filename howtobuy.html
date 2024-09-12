@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/index1.css">
+    <link rel="stylesheet" href="css/index2.css">
+    <link rel="stylesheet" href="css/index3.css">
+    <link rel="stylesheet" href="css/index4.css">
+    <link rel="stylesheet" href="css/index5.css">
+    <link rel="stylesheet" href="css/index6.css">
+    <link rel="stylesheet" href="css/index7.css">
+    <link rel="stylesheet" href="css/index8.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/logo.css">
+    <link rel="stylesheet" href="css/buy.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <title>BUY NOW</title>
+    <style>
+        body {
+            font-family: 'Comic Neue', cursive;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            background-color: #f8f8f8;
+        }
+        .wallet-address {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            padding: 20px;
+            border: 2px solid black;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            max-width: 90%;
+            margin: 0 auto;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .wallet-address:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+        .wallet-address span {
+            font-size: 1.2em;
+            color: black;
+            word-break: break-all;
+            text-align: center;
+        }
+        .copy-icon {
+            cursor: pointer;
+            font-size: 1.5em;
+            color: black;
+            margin-top: 10px;
+        }
+        .alert-box {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #ff69b4;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo"><img src="images/photo_2024-09-10_16-50-11.jpg" alt="" width="100px"></div> 
+        <span id="logo">Fluffer</span>
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="contact.html">Contact us</a></li>
+          <li><a href="roadmap.html">RoadMap</a></li>
+          <li><a href="howtobuy.html">How to Buy</a></li>
+        </ul>
+        <div class="menu-icon" onclick="openSidebar()">&#9776;</div>
+    </nav>
+    
+    <div id="sidebar" class="sidebar">
+        <div class="close-btn" onclick="closeSidebar()">&times;</div>
+        <br><br><br><br>
+        <ul class="sidebar-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+            <li><a href="roadmap.html">RoadMap</a></li>
+            <li><a href="howtobuy.html">How to Buy</a></li>
+        </ul>
+    </div>
+
+    <section class="buy-section" >
+        <h1>How to Buy $Fluffer</h1>
+        
+        <div class="wallet-address">
+            <span>Wallet Address:<br style="color: black;"> 8c8k4HeFAeuLSFoXgdTjcBjx3wQy7LZESFxLAfFbKmp4</span>
+            <i class="copy-icon fas fa-copy" onclick="copyToClipboard()"></i>
+        </div>
+        <br><br><br>
+        <div class="steps">
+            <div class="step">
+                <img src="images/Phantom.png" alt="Create a Wallet Icon" class="step-icon" width="600px">
+                <h2>Create a Wallet</h2>
+                <p>Download Phantom or your wallet of choice from the app store or Google Play Store for free. For desktop users, download the Google Chrome extension by going to the Phantom app website.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="buy-section">
+        <div class="steps">
+            <div class="step">
+                <h2>Get Some SOL</h2>
+                <img src="images/sol.jpg" alt="">
+                <p>Have SOL in your wallet to switch to $Fluffer. If you don’t have any SOL, you can buy SOL from an exchange or cross chain swap and send it to your wallet.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="buy-section">
+        <div class="steps">
+            <div class="step">
+                <h2>Go to Raydium, Jupiter..</h2>
+                <img src="images/raydium.jpg" alt="">
+                <p>
+                    Connect to Raydium or Jupiter. Go raydium.io or jup.ag in google chrome or on the browser <br>
+                    inside your Phantom app. Connect your wallet. Paste the $DOGY token address into <br>
+                    Raydium or Jupiter and confirm the swap. When Phantom prompts you for a wallet signature, sign
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="buy-section">
+        <div class="steps">
+            <div class="step">
+                <h2>Switch SOL for Fluffer</h2>
+                <img src="images/photo_2024-09-10_16-50-11.jpg" alt="" width="40%">
+                <p>
+                    Switch SOL for $Fluffer. We have ZERO taxes so you don’t need to worry about buying with a <br>
+                    specific slippage, although you may need to use slippage during times of market volatility.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <div class="alert-box" id="alert-box">Wallet address copied to clipboard!</div>
+
+    <script src="scripts/navbar.js"></script>
+    <script src="scripts/year.js"></script>
+    <script>
+        function copyToClipboard() {
+            const text = '8c8k4HeFAeuLSFoXgdTjcBjx3wQy7LZESFxLAfFbKmp4';
+            navigator.clipboard.writeText(text).then(() => {
+                showAlert();
+            }).catch(err => {
+                console.error('Failed to copy: ', err);
+            });
+        }
+
+        function showAlert() {
+            const alertBox = document.getElementById('alert-box');
+            alertBox.style.display = 'block';
+            setTimeout(() => {
+                alertBox.style.display = 'none';
+            }, 3000);
+        }
+    </script>
+
+<footer class="footer-section">
+  <div class="footer-content">
+    <div class="footer-text">
+      <p>$Fluffer is dedicated to creating a fun, impactful, and community-driven project. Join us on this fluffy adventure and help us make the crypto world a better place, one $Fluffer at a time!</p>
+    </div>
+    <div class="footer-links">
+      <h2>Quick Links</h2>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="roadmap.html">Roadmap</a></li>
+        <li><a href="howtobuy.html">How to Buy</a></li>
+        <li><a href="https://docs.google.com/document/d/1W1K-RKzpoS7OqNFHoM2u6PG6VS1AWPOQDdvdRIeGoGw/edit#heading=h.rvydwwlspe0c">Whitepaper</a></li>
+      </ul>
+    </div>
+    <div class="footer-social">
+      <h2>Follow Us</h2>
+      <a href="https://twitter.com/FlufferCoin" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://t.me/fluffer" target="_blank"><i class="fab fa-telegram"></i></a>
+      <a href="https://instagram.com/FlufferCoin" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2024 FlufferCoin. All rights reserved.</p>
+  </div>
+</footer>
+</body>
+</html>

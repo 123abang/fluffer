@@ -1,0 +1,17 @@
+@media (max-width: 768px){
+    #logo{
+        position: relative;
+        right: 30px;
+        font-size: 30px;
+        letter-spacing: 5px;
+    }
+}
+
+@media(min-width: 768px){
+    #logo{
+        position: relative;
+        left: 10px;
+        font-size: 30px;
+        letter-spacing: 5px;
+    }
+}
