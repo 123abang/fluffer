@@ -26,18 +26,20 @@
     width: 300px;
     height: 300px;
     background: conic-gradient(
-      #ff66de 0% 10%, 
-      #ff6384 10% 20%, 
-      #36a2eb 20% 30%, 
-      #ffcd56 30% 45%, 
-      #4bc0c0 45% 55%, 
-      #9966ff 55% 100%
+      grey 0% 10%, 
+      #ff6384 10% 20%, /* Development and Marketing */
+      #36a2eb 20% 25%, /* Charity and Donations */
+      #ffcd56 25% 40%, /* Liquidity Pool */
+      #4bc0c0 40% 50%, /* Team Allocation */
+      #9966ff 50% 80%  /* Ecosystem Growth */
     );
     border-radius: 50%;
     margin: 0 auto;
     position: relative;
-    animation: rotate 10s linear infinite;
+    /* animation: rotate 10s linear infinite; */
   }
+  
+  
 
   .pie-chart::before {
     content: '';
