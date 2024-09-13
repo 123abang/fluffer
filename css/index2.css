@@ -33,7 +33,7 @@ body {
     margin: 0 auto;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
+    background-color: white;
     border-radius: 15px;
     animation: slideIn 1.5s ease-in-out;
   }
