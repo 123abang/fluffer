@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-  const pieChart = document.querySelector('.pie-chart');
+  const pieChart = document.querySelector('.pie-chart');  
   const legendItems = document.querySelectorAll('.legend-item');
   const tooltip = document.createElement('div');
   
@@ -18,18 +18,20 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const percentage = (angle / (2 * Math.PI)) * 100;
 
-    if (percentage >= 0 && percentage < 10) {
-      showTooltip(legendItems[0].textContent, event); // Treasury wallet
-    } else if (percentage >= 10 && percentage < 20) {
-      showTooltip(legendItems[1].textContent, event); // Development and Marketing
-    } else if (percentage >= 20 && percentage < 25) {
-      showTooltip(legendItems[2].textContent, event); // Charity and Donations
-    } else if (percentage >= 25 && percentage < 40) {
-      showTooltip(legendItems[3].textContent, event); // Liquidity Pool
-    } else if (percentage >= 40 && percentage < 50) {
-      showTooltip(legendItems[4].textContent, event); // Team Allocation
-    } else if (percentage >= 50) {
-      showTooltip(legendItems[5].textContent, event); // Ecosystem Growth
+    if (percentage >= 0 && percentage < 45) {
+      showTooltip(legendItems[0].textContent, event); // DEX Liquidity Pool
+    } else if (percentage >= 45 && percentage < 65) {
+      showTooltip(legendItems[1].textContent, event); // CEX Liquidity
+    } else if (percentage >= 65 && percentage < 72) {
+      showTooltip(legendItems[2].textContent, event); // Team Allocation
+    } else if (percentage >= 72 && percentage < 79) {
+      showTooltip(legendItems[3].textContent, event); // Community (Airdrops/Contests)
+    } else if (percentage >= 79 && percentage < 86) {
+      showTooltip(legendItems[4].textContent, event); // Marketing
+    } else if (percentage >= 86 && percentage < 93) {
+      showTooltip(legendItems[5].textContent, event); // Treasury Wallet
+    } else if (percentage >= 93 && percentage < 100) {
+      showTooltip(legendItems[6].textContent, event); // Charity
     } else {
       hideTooltip();
     }
