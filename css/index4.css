@@ -26,18 +26,38 @@
     width: 300px;
     height: 300px;
     background: conic-gradient(
-      green 0% 10%, 
-      #ff6384 10% 20%, /* Development and Marketing */
-      #36a2eb 20% 25%, /* Charity and Donations */
-      #ffcd56 25% 40%, /* Liquidity Pool */
-      #4bc0c0 40% 50%, /* Team Allocation */
-      #9966ff 50% 80%  /* Ecosystem Growth */
+      #ffcd56 0% 45%,   /* DEX Liquidity Pool */
+      #36a2eb 45% 65%,  /* CEX Liquidity */
+      #4bc0c0 65% 72%,  /* Team Allocation */
+      #ff6384 72% 79%,  /* Community (Airdrops/Contests) */
+      #ff66de 79% 86%,  /* Marketing */
+      green 86% 93%,    /* Treasury Wallet */
+      #9966ff 93% 100%  /* Charity */
     );
     border-radius: 50%;
     margin: 0 auto;
     position: relative;
-    /* animation: rotate 10s linear infinite; */
-  }
+    animation: rotate 10s linear infinite;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.legend-color {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border-radius: 3px;
+}
+
+.legend {
+    margin-top: 20px;
+    text-align: left;
+}
+
   
   
 
@@ -49,7 +69,7 @@
     transform: translate(-50%, -50%);
     width: 150px;
     height: 150px;
-    background-color: #fdf6e3;
+    background-color: white;
     border-radius: 50%;
     z-index: 1;
   }
