@@ -1,5 +1,5 @@
 function copyToClipboard() {
-    const text = '8c8k4HeFAeuLSFoXgdTjcBjx3wQy7LZESFxLAfFbKmp4';
+    const text = 'AKYkEmhcoGdgc7kEqTBzr8UjXc5Y6uPXnW7EKjaxAHim';
     navigator.clipboard.writeText(text).then(() => {
         showAlert();
     }).catch(err => {
