@@ -1,202 +1,378 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/navbar.css">
-    <link rel="stylesheet" href="css/index1.css">
-    <link rel="stylesheet" href="css/index2.css">
-    <link rel="stylesheet" href="css/index3.css">
-    <link rel="stylesheet" href="css/index4.css">
-    <link rel="stylesheet" href="css/index5.css">
-    <link rel="stylesheet" href="css/index6.css">
-    <link rel="stylesheet" href="css/index7.css">
-    <link rel="stylesheet" href="css/index8.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/logo.css">
-    <link rel="stylesheet" href="css/buy.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <title>Fluffer's Phenomenal Journey</title>
-    <style>
-        /* body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 1200px;
-            margin: 0 auto;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap">
+  <title>FLUFFER</title>
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/index1.css">
+  <link rel="stylesheet" href="css/index2.css">
+  <link rel="stylesheet" href="css/index3.css">
+  <link rel="stylesheet" href="css/index4.css">
+  <link rel="stylesheet" href="css/index5.css">
+  <link rel="stylesheet" href="css/index6.css">
+  <link rel="stylesheet" href="css/index7.css">
+  <link rel="stylesheet" href="css/index8.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/logo.css">
+  <link rel="stylesheet" href="css/dance.css">
+  <link rel="stylesheet" href="css/dex.css">
+  <link rel="stylesheet" href="css/FAQ.CSS">
+
+
+
+<style>
+          .wallet-address {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
             padding: 20px;
-            background: linear-gradient(to right, #8a2387, #e94057, #f27121);
-        } */
-        body {
-            font-family: 'Comic Neue', cursive;
-            margin: 0;
-            padding: 0;
-            overflow-x: hidden;
-            background-color: #f8f8f8;
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        .milestones-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-        }
-        .milestone-item {
-            background-color: rgba(255, 255, 255, 0.9);
+            border: 2px solid black;
             border-radius: 10px;
-            padding: 20px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            max-width: 90%;
+            margin: 0 auto;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
-        .milestone-item:hover {
+        .wallet-address:hover {
             transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
         }
-        .milestone-emoji {
-            font-size: 2em;
-            margin-bottom: 10px;
-        }
-        h1 {
+        .wallet-address span {
+            font-size: 1.2em;
+            color: black;
+            word-break: break-all;
             text-align: center;
+        }
+        .copy-icon {
+            cursor: pointer;
+            font-size: 1.5em;
+            color: black;
+            margin-top: 10px;
+        }
+        .alert-box {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: black;
             color: white;
-            font-size: 2.5em;
-            margin-bottom: 40px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
-        h2 {
-            color: #8a2387;
-            margin-top: 0;
-        }
-    </style>
+</style>
+
 </head>
 <body>
-    <nav class="navbar">
-        <div class="logo"><img src="images/photo_2024-09-10_16-50-11.jpg" alt="" width="100px"></div> <span id="logo">Fluffer</span>
-        <ul class="nav-list">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About us</a></li>
-          <li><a href="contact.html">Contact us</a></li>
-          <li><a href="roadmap.html">RoadMap</a></li>
-          <li><a href="howtobuy.html">How to Buy</a></li>
-          <li><a href="FAQ.HTML">FAQ'S</a></li>
+    <br>
+  <nav class="navbar">
+    <div class="logo"><img src="images/photo_2024-09-10_16-50-11.jpg" alt="" width="100px"></div> <span id="logo">Fluffer</span>
+    <ul class="nav-list">
+      <li><a href="#">Home</a></li>
+      <li><a href="about.html">About us</a></li>
+      <li><a href="contact.html">Contact us</a></li>
+      <li><a href="roadmap.html">RoadMap</a></li>
+      <li><a href="howtobuy.html">How to Buy</a></li>
+      <li><a href="FAQ.HTML">FAQ'S</a></li>
+
+    </ul>
+    <!-- <button class="live-chart">Live Chart</button> -->
+    <div class="menu-icon" onclick="openSidebar()">&#9776;</div>
+  </nav>
+
+  <div id="sidebar" class="sidebar">
+    <div class="close-btn" onclick="closeSidebar()">&times;</div>
+    <br><br><br><br>
+    <ul class="sidebar-list">
+        <li><a href="#">Home</a></li>
+        <li><a href="about.html">About us</a></li>
+        <li><a href="contact.html">Contact us</a></li>
+        <li><a href="roadmap.html">RoadMap</a></li>
+        <li><a href="howtobuy.html">How to Buy</a></li>
+        <li><a href="FAQ.HTML">FAQ'S</a></li>
+    </ul>
+  </div>
+
+
+  <section class="welcome-section">
+    <h1>WELCOME TO FLUFFER LAND</h1>
+    <div class="image-circle">
+      <img src="images/photo_2024-09-10_16-50-11.jpg" alt="Fluffy Land Image">
+    </div>
+  </section>
+
+
+  <section class="about-section">
+    <h1>About Fluffer <i class="fas fa-paw"></i></h1>
+
+    <p>The project is built around the core values of fun, community, and positive impact. Its mission is to bring joy, build a strong brand, and foster an engaged community within the crypto world. These principles guide the project's efforts to create a vibrant ecosystem that combines memes, community-driven initiatives, and real-world impact.</p>
     
-        </ul>
-        <!-- <button class="live-chart">Live Chart</button> -->
-        <div class="menu-icon" onclick="openSidebar()">&#9776;</div>
-      </nav>
+  </section>
+
+  
+  <section class="kyc-section">
+    <!-- <h1>KYC Certification</h1> -->
+      <!-- <img src="images/certification.jpg" alt="KYC Certification Image" id="img"> -->
     
-      <div id="sidebar" class="sidebar">
-        <div class="close-btn" onclick="closeSidebar()">&times;</div>
-        <br><br><br><br>
-        <ul class="sidebar-list">
-            <li><a href="#">Home</a></li>
-            <li><a href="about.html">About us</a></li>
-            <li><a href="contact.html">Contact us</a></li>
-            <li><a href="roadmap.html">RoadMap</a></li>
-            <li><a href="howtobuy.html">How to Buy</a></li>
-            <li><a href="FAQ.HTML">FAQ'S</a></li>
-        </ul>
+  </section>
+
+
+<section class="tokenomics-section">
+  <h1>🐾 Tokenomics</h1>
+  <div class="pie-chart"></div>
+  <div class="legend">
+
+    <div class="legend-item">
+      <div class="legend-color" style="background-color: #ffcd56;"></div>
+      🐾 DEX Liquidity Pool - 45%
+    </div>
+    <div class="legend-item">
+      <div class="legend-color" style="background-color: #36a2eb;"></div>
+      🐾 CEX Liquidity - 20%
+    </div>
+    <div class="legend-item">
+      <div class="legend-color" style="background-color: #4bc0c0;"></div>
+      🐾 Team Allocation - 7%
+    </div>
+    <div class="legend-item">
+      <div class="legend-color" style="background-color: #ff6384;"></div>
+      🐾 Community (Airdrops/Contests) - 7%
+    </div>
+    <div class="legend-item">
+      <div class="legend-color" style="background-color: #ff66de;"></div>
+      🐾 Marketing - 7%
+    </div>
+    <div class="legend-item">
+      <div class="legend-color" style="background-color: green;"></div>
+      🐾 Treasury Wallet - 7%
+    </div>
+    <div class="legend-item">
+      <div class="legend-color" style="background-color: #9966ff;"></div>
+      🐾 Charity - 7%
+    </div>
+  </div>
+</section>
+
+
+
+  <section class="partnerships-section">
+    <h1>Partnerships and Collaborations</h1>
+    <p>Fluffer has existing partnerships with Coinscribble for PR campaigns and various dog-related charities. The project plans to engage with more DeFi projects, exchanges, and charitable organizations to expand its reach and impact.</p>
+</section>
+
+
+<section class="roadmap-section">
+  <h1>Roadmap</h1>
+  <div class="milestones">
+    <div class="milestone">
+      <h2>Milestones Achieved:</h2>
+      <ul>
+        <li> Fluffer began as fluffcoin on solana blockchain</li>
+        <li>New Logo & Branding.</li>
+        <li>Community Growth</li>
+      </ul>
+    </div>
+    <a href="roadmap.html" class="learn-more-button">Learn More</a>
+  </div>
+</section>
+
+
+<section class="buy-section">
+  <h1>How to Buy Fluffer</h1>
+  
+  <div class="wallet-address">
+    <span>Wallet Address:<br> AKYkEmhcoGdgc7kEqTBzr8UjXc5Y6uPXnW7EKjaxAHim</span>
+    <i class="copy-icon fas fa-copy" onclick="copyToClipboard()"></i>
+</div>
+<br><br>
+  <div class="steps">
+    <div class="step">
+      <img src="images/Phantom.png" alt="Create a Wallet Icon" class="step-icon" width="600px">
+      <h2>Create a Wallet</h2>
+      <p>Download Phantom or your wallet of choice from the app store or Google Play Store for free. For desktop users, download the Google Chrome extension by going to the Phantom app website.</p>
+    </div>
+  <a href="howtobuy.html" class="buy-now-button">Learn More</a>
+</section>
+
+<div class="alert-box" id="alert-box">Wallet address copied to clipboard!</div>
+
+<section class="whitepaper-section">
+  <h1>Download Our Whitepaper</h1>
+  <p>Explore the detailed vision, technology, and roadmap of Fluffer. Our whitepaper provides an in-depth look at our mission, tokenomics, and plans for the future.</p>
+  <a href="https://docs.google.com/document/d/1W1K-RKzpoS7OqNFHoM2u6PG6VS1AWPOQDdvdRIeGoGw/edit#heading=h.rvydwwlspe0c" class="download-button" target="_blank">Download Whitepaper</a>
+</section>
+
+<div class="faq-container">
+  <center>
+  <h1 class="faq-header" style="color: black; text-shadow: 2px 2px 4px #aaa;">Fluffer <br>FAQ</h1>
+</center>
+  
+  <div class="faq-item" style="background-color: white; color: black;">
+      <div class="faq-question">What is Fluffer ?</div>
+      <div class="faq-answer">Fluffer is the cutest and fluffiest meme coin on the Solana blockchain. It's a community-driven project dedicated to creating a fun, engaging ecosystem while supporting dog-related charitable causes worldwide.</div>
+  </div>
+  
+  <div class="faq-item" style="background-color: white; color: black;"> 
+      <div class="faq-question">When was Fluffer founded?</div>
+      <div class="faq-answer">Fluffer was founded in September 2024, originally branded as FluffCoin. As of September 16, 2024, we are now live with our new brand, Fluffer, evolving from our roots to bring even more joy, community engagement, and value. Our mission remains focused on building a strong, reputable brand and fostering a vibrant community in the crypto world.</div>
+  </div>
+  
+  <div class="faq-item" style="background-color: white; color: black;">
+      <div class="faq-question">What makes Fluffer unique?</div>
+      <div class="faq-answer">Fluffer combines the light-hearted nature of memes with the serious potential of blockchain technology. We focus on community engagement, charitable initiatives, and financial opportunities for our holders.</div>
+  </div>
+  
+  <div class="faq-item" style="background-color: white; color: black;">
+      <div class="faq-question">How does Fluffer support charitable causes?</div>
+      <div class="faq-answer">7% of our total supply is allocated to supporting dog-related causes globally. We partner with various dog charities to provide funding for shelters, treatments, and adoption programs, making a positive impact on the lives of our furry friends..</div>
+  </div>
+  
+  <div class="faq-item" style="background-color: white; color: black;">
+      <div class="faq-question">What is the total supply of Fluffer?</div>
+      <div class="faq-answer">The total supply of Fluffer 1,000,000,000 FLUFFER tokens.</div>
+  </div>
+  
+  <div class="faq-item" style="background-color: white; color: black;">
+      <div class="faq-question">How are the Fluffer tokens distributed?</div>
+      <div class="faq-answer">
+          Community Rewards: 10% (100,000,000 FLUFFER)<br>
+          Development and Marketing: 10% (100,000,000 FLUFFER)<br>
+          Charity and Donations: 5% (50,000,000 FLUFFY)<br>
+          Liquidity Pool: 15% (150,000,000 FLUFFER)<br>
+          Team Allocation: 10% (100,000,000 FLUFFER)<br>
+          Ecosystem Growth: 45% (450,000,000 FLUFFER)
       </div>
-    <header>
-        <h1 style="color: black;">🚀 Fluffer's Phenomenal Journey 🚀</h1>
-    </header>
-    <main class="milestones-container">
-        <section class="milestone-item">
-            <div class="milestone-emoji">🎉</div>
-            <h2>Fluffer's Grand Debut</h2>
-            <p>Launched on Solana as FluffCoin, quickly capturing the hearts of meme enthusiasts and blockchain aficionados alike.</p>
-        </section>
-        <section class="milestone-item">
-            <div class="milestone-emoji">🖼️</div>
-            <h2>Brand Makeover</h2>
-            <p>Unveiled a fresh, playful logo and branding that perfectly encapsulates our fun-loving spirit and meme-worthy essence.</p>
-        </section>
-        <section class="milestone-item">
-            <div class="milestone-emoji">📈</div>
-            <h2>Explosive Growth</h2>
-            <p>Witnessed our community skyrocket across Telegram, Twitter, and Instagram. Weekly AMAs became the talk of the town!</p>
-        </section>
-        <section class="milestone-item">
-            <div class="milestone-emoji">🌐</div>
-            <h2>Web3 Website Wonderland</h2>
-            <p>Launched a cutting-edge website on Web3 platforms, complete with unstoppable domains. A true digital playground for Fluffer fans!</p>
-        </section>
-        <section class="milestone-item">
-            <div class="milestone-emoji">🐾</div>
-            <h2>Paws for a Cause</h2>
-            <p>Forged partnerships with dog charities, spreading love and support to our furry friends across the globe.</p>
-        </section>
-        <section class="milestone-item">
-            <div class="milestone-emoji">💹</div>
-            <h2>DEX Domination</h2>
-            <p>Made waves with listings on Raydium and DEXTools, giving our community more ways to engage with Fluffer.</p>
-        </section>
-        <section class="milestone-item">
-            <div class="milestone-emoji">🏦</div>
-            <h2>Treasure Trove</h2>
-            <p>Established the Fluffer Treasury, investing in blue-chip crypto to secure our future and fuel our growth.</p>
-        </section>
-        <section class="milestone-item">
-            <div class="milestone-emoji">🔄</div>
-            <h2>Smooth Operator</h2>
-            <p>Executed a flawless migration from FluffCoin to Fluffer, ensuring no token was left behind in our evolution.</p>
-        </section>
-        <section class="milestone-item">
-            <div class="milestone-emoji">🏆</div>
-            <h2>700k MC Milestone</h2>
-            <p>Smashed through our previous ATH, reaching an astounding 700k Market Cap! A testament to our community's unwavering support.</p>
-        </section>
-        <section class="milestone-item">
-            <div class="milestone-emoji">🎙️</div>
-            <h2>Spaces Sensation</h2>
-            <p>Hosted electrifying Twitter Spaces, fostering engaging discussions and bringing our community closer than ever.</p>
-        </section>
-        <section class="milestone-item">
-            <div class="milestone-emoji">👥</div>
-            <h2>Community Explosion</h2>
-            <p>Celebrated as our member count soared, welcoming thousands of new Fluffer enthusiasts to our ever-growing family.</p>
-        </section>
-        <section class="milestone-item">
-            <div class="milestone-emoji">🔮</div>
-            <h2>Future Unleashed</h2>
-            <p>With our incredible achievements, we're just getting started. The future is Fluffer, and it's brighter than ever!</p>
-        </section>
-    </main>
-    <footer class="footer-section">
-        <div class="footer-content">
-          <div class="footer-text">
-            <p>In Fluffer we trust, to the moon or bust! For memes, gains, and a cause so grand, together we’ll build a brand that’ll stand!</p>
-          </div>
-          <div class="footer-links">
-            <h2>Quick Links</h2>
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="about.html">About Us</a></li>
-              <li><a href="roadmap.html">Roadmap</a></li>
-              <li><a href="howtobuy.html">How to Buy</a></li>
-              <li><a href="https://docs.google.com/document/d/1W1K-RKzpoS7OqNFHoM2u6PG6VS1AWPOQDdvdRIeGoGw/edit#heading=h.rvydwwlspe0c">Whitepaper</a></li>
-            </ul>
-          </div>
-          <div class="footer-social">
-            <h2>Follow Us</h2>
-            <a href="https://x.com/fluffersolana" target="_blank" class="social-icon">
-              <i class="fab fa-twitter"></i>
-            </a>
-            <a href="https://t.me/fluffcoinfluffy" target="_blank" class="social-icon">
-              <i class="fab fa-telegram-plane"></i>
-            </a>
-            <a href="https://t.me/+qYhFtEvkcUU0NWIx" target="_blank" class="social-icon">
-              <i class="fab fa-instagram"></i>
-            </a>
-          </div>
-          <div class="footer-bottom">
-            <p>&copy; <span id="year">2024</span> Fluffer Land. All rights reserved.</p>
-          </div>
-        </div>
-      </footer>
-      <script src="scripts/navbar.js"></script>
+  </div>
+  
+  <div class="faq-item" style="background-color: white; color: black;">
+      <div class="faq-question">What security measures are in place for Fluffer?</div>
+      <div class="faq-answer">Fluffer has achieved KYC certification through Assure DeFi, ensuring trust and credibility within our community. Additionally, our liquidity is locked, guaranteeing the stability and security of our token. We have also ensured that there are no more mintable tokens, providing peace of mind to holders by preventing any unexpected inflation of the supply.</div>
+  </div>
+  
+  <div class="faq-item" style="background-color: white; color: black;">
+      <div class="faq-question">What are the future plans for Fluffer?</div>
+      <div class="faq-answer">
+          Our roadmap includes:<br>
+          - Expanded listings on more decentralized exchanges.<br>
+          - Launch of staking rewards once the community grows.<br>
+          - Implementation of multi-language support for global outreach.<br>
+          - Increased support for dog-related charitable causes.
+      </div>
+  </div>
+  
+  
+  <center>
+  <a href="FAQ.HTML" class="buy-now-button">See More</a>
+</center>
+</div>
+
+<script>
+         document.querySelectorAll('.faq-question').forEach(item => {
+            item.addEventListener('click', () => {
+                const answer = item.nextElementSibling;
+                item.classList.toggle('active');
+                
+                if (item.classList.contains('active')) {
+                    answer.style.maxHeight = answer.scrollHeight + 'px';
+                    answer.style.opacity = 1;
+                } else {
+                    answer.style.maxHeight = 0;
+                    answer.style.opacity = 0;
+                }
+            });
+        });
+  </script>
+
+<Center>
+  <h1 id="mar">
+            <pre>F</pre>
+            <pre>L</pre>
+            <pre>U</pre>
+            <pre>F</pre>
+            <pre>F</pre>
+            <pre>E</pre>
+            <pre>R</pre>
+            <!-- <pre>Y</pre> -->
+
+
+
+
+  </h1>
+</Center>
+
+  <center>
+    <h2>OFFICIAL PARTNERS</h2>
+    <a href="
+    https://www.dextools.io/app/en/solana/pair-explorer/FDbXvn4jzi2JkYUQhm6C2m9ENPmmWRxxRa3SbBxdh1F1?t=1726512384010"
+    style="cursor: pointer;">
+      <img src="images/dex_tools-removebg-preview.png" alt="" id="dex">
+     </a>
+  </center>
+
+<footer class="footer-section">
+  <div class="footer-content">
+    <div class="footer-text">
+      <p>In Fluffer we trust, to the moon or bust! For memes, gains, and a cause so grand, together we’ll build a brand that’ll stand!</p>
+    </div>
+    <div class="footer-links">
+      <h2>Quick Links</h2>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="roadmap.html">Roadmap</a></li>
+        <li><a href="howtobuy.html">How to Buy</a></li>
+        <li><a href="https://docs.google.com/document/d/1W1K-RKzpoS7OqNFHoM2u6PG6VS1AWPOQDdvdRIeGoGw/edit#heading=h.rvydwwlspe0c">Whitepaper</a></li>
+      </ul>
+    </div>
+    <div class="footer-social">
+      <h2>Follow Us</h2>
+      <a href="https://x.com/fluffersolana" target="_blank" class="social-icon">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="https://t.me/+qYhFtEvkcUU0NWIx" target="_blank" class="social-icon">
+        <i class="fab fa-telegram-plane"></i>
+      </a>
+      <a href="https://www.instagram.com/fluffersol?igsh=MTFubzJ2amdjdmc0cw==" target="_blank" class="social-icon">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="year">2024</span> Fluffer Land. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+    function copyToClipboard() {
+      const address = "AKYkEmhcoGdgc7kEqTBzr8UjXc5Y6uPXnW7EKjaxAHim";
+      navigator.clipboard.writeText(address).then(() => {
+        const alertBox = document.getElementById("alert-box");
+        alertBox.style.display = "block";
+        setTimeout(() => {
+          alertBox.style.display = "none";
+        }, 3000);
+      }).catch(err => {
+        console.error("Failed to copy text: ", err);
+      });
+    }
+
+</script>
+
+
+  <script src="scripts/navbar.js"></script>
+  <script src="scripts/details.js"></script>
+  <script src="scripts/year.js"></script>
+  <script src="scripts/wallet.js"></script>
+
+
 </body>
 </html>
