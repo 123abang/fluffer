@@ -3,9 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/index1.css">
+    <link rel="stylesheet" href="css/index2.css">
+    <link rel="stylesheet" href="css/index3.css">
+    <link rel="stylesheet" href="css/index4.css">
+    <link rel="stylesheet" href="css/index5.css">
+    <link rel="stylesheet" href="css/index6.css">
+    <link rel="stylesheet" href="css/index7.css">
+    <link rel="stylesheet" href="css/index8.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/logo.css">
+    <link rel="stylesheet" href="css/buy.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <title>Fluffer's Phenomenal Journey</title>
     <style>
-        body {
+        /* body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
             color: #333;
@@ -13,6 +27,19 @@
             margin: 0 auto;
             padding: 20px;
             background: linear-gradient(to right, #8a2387, #e94057, #f27121);
+        } */
+        body {
+            font-family: 'Comic Neue', cursive;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            background-color: #f8f8f8;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
         }
         .milestones-container {
             display: grid;
@@ -46,8 +73,35 @@
     </style>
 </head>
 <body>
+    <nav class="navbar">
+        <div class="logo"><img src="images/photo_2024-09-10_16-50-11.jpg" alt="" width="100px"></div> <span id="logo">Fluffer</span>
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="contact.html">Contact us</a></li>
+          <li><a href="roadmap.html">RoadMap</a></li>
+          <li><a href="howtobuy.html">How to Buy</a></li>
+          <li><a href="FAQ.HTML">FAQ'S</a></li>
+    
+        </ul>
+        <!-- <button class="live-chart">Live Chart</button> -->
+        <div class="menu-icon" onclick="openSidebar()">&#9776;</div>
+      </nav>
+    
+      <div id="sidebar" class="sidebar">
+        <div class="close-btn" onclick="closeSidebar()">&times;</div>
+        <br><br><br><br>
+        <ul class="sidebar-list">
+            <li><a href="#">Home</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+            <li><a href="roadmap.html">RoadMap</a></li>
+            <li><a href="howtobuy.html">How to Buy</a></li>
+            <li><a href="FAQ.HTML">FAQ'S</a></li>
+        </ul>
+      </div>
     <header>
-        <h1>🚀 Fluffer's Phenomenal Journey 🚀</h1>
+        <h1 style="color: black;">🚀 Fluffer's Phenomenal Journey 🚀</h1>
     </header>
     <main class="milestones-container">
         <section class="milestone-item">
@@ -111,5 +165,38 @@
             <p>With our incredible achievements, we're just getting started. The future is Fluffer, and it's brighter than ever!</p>
         </section>
     </main>
+    <footer class="footer-section">
+        <div class="footer-content">
+          <div class="footer-text">
+            <p>In Fluffer we trust, to the moon or bust! For memes, gains, and a cause so grand, together we’ll build a brand that’ll stand!</p>
+          </div>
+          <div class="footer-links">
+            <h2>Quick Links</h2>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="roadmap.html">Roadmap</a></li>
+              <li><a href="howtobuy.html">How to Buy</a></li>
+              <li><a href="https://docs.google.com/document/d/1W1K-RKzpoS7OqNFHoM2u6PG6VS1AWPOQDdvdRIeGoGw/edit#heading=h.rvydwwlspe0c">Whitepaper</a></li>
+            </ul>
+          </div>
+          <div class="footer-social">
+            <h2>Follow Us</h2>
+            <a href="https://x.com/fluffersolana" target="_blank" class="social-icon">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://t.me/fluffcoinfluffy" target="_blank" class="social-icon">
+              <i class="fab fa-telegram-plane"></i>
+            </a>
+            <a href="https://t.me/+qYhFtEvkcUU0NWIx" target="_blank" class="social-icon">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+          <div class="footer-bottom">
+            <p>&copy; <span id="year">2024</span> Fluffer Land. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
+      <script src="scripts/navbar.js"></script>
 </body>
 </html>
