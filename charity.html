@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/milestones.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/logo.css">
+    <title>PawsitiveCoin - Dog Meme Charity Wallet</title>
+    <style>
+        @keyframes slideInLeft {
+            from { transform: translateX(-100%); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+        @keyframes slideInRight {
+            from { transform: translateX(100%); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-30px); }
+            60% { transform: translateY(-15px); }
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+            line-height: 1.6;
+        }
+        /* .navbar {
+            background-color: #000;
+            color: #fff;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        } */
+        /* .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        } */
+        /* .logo img {
+            height: 40px;
+            margin-right: 10px;
+        } */
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 1rem;
+            transition: color 0.3s ease;
+        }
+        .nav-links a:hover {
+            color: #ffd700;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .hero {
+            background-color: #000;
+            color: #fff;
+            padding: 8rem 0 4rem;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            animation: bounce 2s ease infinite;
+        }
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        .cta-button {
+            background-color: #ffd700;
+            color: #000;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            display: inline-block;
+        }
+        .cta-button:hover {
+            background-color: #ffec8b;
+        }
+        .wallet-address {
+            background-color: #fff;
+            border: 2px solid #000;
+            padding: 1rem;
+            margin: 2rem 0;
+            text-align: center;
+            word-break: break-all;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .features {
+            display: flex;
+            justify-content: space-between;
+            margin: 4rem 0;
+            flex-wrap: wrap;
+        }
+        .feature {
+            flex-basis: 30%;
+            text-align: center;
+            padding: 2rem;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .feature:hover {
+            transform: translateY(-10px);
+        }
+        .impact-stats {
+            display: flex;
+            justify-content: space-around;
+            margin: 4rem 0;
+            text-align: center;
+        }
+        .stat {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+        .testimonials {
+            background-color: #000;
+            color: #fff;
+            padding: 4rem 0;
+        }
+        .testimonial {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .testimonial img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+        }
+        .footer {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+        .social-links a {
+            color: #fff;
+            font-size: 1.5rem;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        .animated {
+            opacity: 0;
+        }
+        .slide-in-left {
+            animation: slideInLeft 1s ease forwards;
+        }
+        .slide-in-right {
+            animation: slideInRight 1s ease forwards;
+        }
+        .fade-in {
+            animation: fadeIn 1s ease forwards;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo"><img src="images/photo_2024-09-10_16-50-11.jpg" alt="" width="100px"></div> <span id="logo">Fluffer</span>
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="contact.html">Contact us</a></li>
+          <li><a href="roadmap.html">RoadMap</a></li>
+          <li><a href="howtobuy.html">How to Buy</a></li>
+          <li><a href="FAQ.HTML">FAQ'S</a></li>
+          <li><a href="charity.html">charity wallet</a></li>
+        </ul>
+        <div class="menu-icon" onclick="openSidebar()">&#9776;</div>
+    </nav>
+    
+    <div id="sidebar" class="sidebar">
+        <div class="close-btn" onclick="closeSidebar()">&times;</div>
+        <br><br><br><br>
+        <ul class="sidebar-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+            <li><a href="roadmap.html">RoadMap</a></li>
+            <li><a href="howtobuy.html">How to Buy</a></li>
+            <li><a href="FAQ.HTML">FAQ'S</a></li>
+        </ul>
+    </div> 
+    
+    <!-- <nav class="navbar">
+        <div class="logo">
+            <img src="/placeholder.svg?height=40&width=40" alt="PawsitiveCoin Logo">
+            PawsitiveCoin Charity
+        </div>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#impact">Impact</a>
+            <a href="#donate">Donate</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav> -->
+
+    <div class="hero">
+        <div class="container">
+            <h1>Empowering Fluffer, One Coin at a Time</h1>
+            <p>Join the Fluffer movement and make a difference in dogs' lives!</p>
+            <a href="#donate" class="cta-button">Donate Now</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <section id="about" class="animated slide-in-left">
+            <h2>About Our Charity Wallet</h2>
+            <p>FlufferCoin is more than just a dog meme coin - it's a powerful force for change in the world of animal welfare. Our charity wallet is dedicated to transforming the lives of dogs in need, one transaction at a time. By harnessing the power of cryptocurrency and the passion of our community, we're able to make a real, tangible difference in the lives of our furry friends.</p>
+            <p>Every Fluffer donated goes directly towards supporting a wide range of initiatives, from local shelter support to large-scale rescue operations. We believe in transparency, efficiency, and most importantly, the incredible impact that comes when dog lovers unite for a common cause.</p>
+        </section>
+
+        <section id="impact" class="animated slide-in-right py-5">
+            <div class="container">
+              <h2 class="text-center mb-4">Our Impact</h2>
+              <p class="text-center">
+                Since our inception, Fluffer has made significant strides in improving the lives of dogs around the world. Here's a glimpse of what we've achieved so far:
+              </p>
+              <div class="row text-center my-4 impact-stats">
+                <div class="col-md-4 mb-4">
+                  <div class="stat h1">50,000+</div>
+                  <p>Dogs Helped</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <div class="stat h1">1,000,000</div>
+                  <p>Fluffer Donated</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <div class="stat h1">100+</div>
+                  <p>Shelters Supported</p>
+                </div>
+              </div>
+              <p class="text-center">Your donations have enabled us to:</p>
+              <ul class="list-unstyled text-left text-md-center">
+                <li>Provide emergency medical care to injured strays</li>
+                <li>Fund spay and neuter programs to control the pet population</li>
+                <li>Supply food and essential supplies to underfunded shelters</li>
+                <li>Support rescue and rehabilitation efforts for abused dogs</li>
+                <li>Sponsor adoption events to help dogs find their forever homes</li>
+              </ul>
+            </div>
+          </section>
+          
+
+        <section id="donate" class="animated fade-in">
+            <h2>How to Donate</h2>
+            <p>Making a difference is as easy as sending your Fluffer to our charity wallet. Every coin counts, no matter how small the amount!</p>
+            <div class="wallet-address">
+                <strong>Charity Wallet Address:</strong><br>
+                DoE3Bzudny7UZzjwDpkR3mc7CpzhJA3nJ3sKRS5wgcXZ
+            </div>
+            <p>By donating, you're not just giving money - you're giving hope, health, and happiness to dogs in need. Your contribution will be put to work immediately, funding our various initiatives and projects aimed at improving canine welfare.</p>
+        </section>
+
+        <div class="features py-5">
+            <div class="container">
+              <div class="row text-center">
+                <div class="col-md-4 mb-4 feature animated slide-in-left">
+                  <h3>100% Transparent</h3>
+                  <p>All donations and expenditures are recorded on the blockchain, ensuring complete transparency and accountability.</p>
+                </div>
+                <div class="col-md-4 mb-4 feature animated fade-in">
+                  <h3>Maximum Impact</h3>
+                  <p>We work with a network of vetted partners to ensure your donations have the greatest possible impact on dogs' lives.</p>
+                </div>
+                <div class="col-md-4 mb-4 feature animated slide-in-right">
+                  <h3>Community-Driven</h3>
+                  <p>Join our vibrant community of dog lovers and meme enthusiasts, united by a common goal of helping our furry friends.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <section id="testimonials" class="testimonials py-5">
+            <div class="container">
+              <h2 class="text-center mb-4">Fluffer Stories</h2>
+              <div class="row align-items-center">
+                <div class="col-md-4 text-center mb-4">
+                  <img
+                    src="images/photo_2024-09-10_16-50-11.jpg"
+                    alt="Happy Dog"
+                    class="img-fluid rounded-circle"
+                    style="max-width: 200px;"
+                  />
+                </div>
+                <div class="col-md-8">
+                  <p class="mb-2">"Thanks to Fluffer Coin donors, I received the surgery I needed and found my forever home. Woof!"</p>
+                  <p><strong>- Max, Rescued Pug</strong></p>
+                </div>
+              </div>
+            </div>
+          </section> <br>
+          
+    <footer class="footer-section">
+        <div class="footer-content">
+          <div class="footer-text">
+            <p>In Fluffer we trust, to the moon or bust! For memes, gains, and a cause so grand, together we’ll build a brand that’ll stand!</p>
+          </div>
+          <div class="footer-links">
+            <h2>Quick Links</h2>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="roadmap.html">Roadmap</a></li>
+              <li><a href="howtobuy.html">How to Buy</a></li>
+              <li><a href="https://docs.google.com/document/d/1W1K-RKzpoS7OqNFHoM2u6PG6VS1AWPOQDdvdRIeGoGw/edit#heading=h.rvydwwlspe0c">Whitepaper</a></li>
+            </ul>
+          </div>
+          <div class="footer-social">
+            <h2>Follow Us</h2>
+            <a href="https://x.com/fluffersolana" target="_blank" class="social-icon">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://t.me/fluffcoinfluffy" target="_blank" class="social-icon">
+              <i class="fab fa-telegram-plane"></i>
+            </a>
+            <a href="https://t.me/+qYhFtEvkcUU0NWIx" target="_blank" class="social-icon">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+          <div class="footer-bottom">
+            <p>&copy; <span id="year">2024</span> Fluffer Land. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const animatedElements = document.querySelectorAll('.animated');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.animationDelay = '0.2s';
+                        entry.target.style.animationDuration = '1s';
+                        entry.target.style.animationFillMode = 'forwards';
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            animatedElements.forEach(el => observer.observe(el));
+        });
+    </script>
+</body>
+</html>
+
